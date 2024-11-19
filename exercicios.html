@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+//     **1. Bem-vindo ao Sistema**
+
+// Peça o nome do usuário e exiba uma mensagem de boas-vindas na tela.
+
+//
+
+let nomeUsuario = prompt("Qual é o seu nome?");
+alert(`Olá, ${nomeUsuario}! Seja bem vindo ao JavaScript!`);
+console.log(" O usuário digitou o nome " + nomeUsuario)
+
+// **2. Calculadora Simples**
+
+// Solicite dois números ao usuário, calcule a soma deles e mostre o resultado.
+
+let numero1 = prompt("Qual é o número 1?");
+let numero2 = prompt("Qual é o número 2?");
+numero1 = Number(numero1);
+numero2 = Number(numero2);
+
+let soma = numero1 + numero2;
+alert(`Asoma dos números é: ${soma}`);
+
+// **3. Descubra sua Idade**
+
+// Peça ao usuário o ano atual e o ano de nascimento, calcule sua idade e exiba o resultado.
+
+let ano = prompt("Em qual ano você nasceu?");
+ano = Number(ano);
+let conta = 2024 - Number(ano);
+alert(" Você tem " + conta + " anos, pois nasceu em " + ano ".")
+console.log("Resultado da conta ", conta)
+
+// **4. Loja de Sorvetes**
+
+// Pergunte ao usuário quantos sorvetes ele quer comprar e o preço de cada um, calcule o valor total da compra e mostre na tela.
+
+let sorvetes = prompt("Quantos sorvetes você gostaria de comprar?");
+let valor = prompt("Quanto custa cada sorvete?");
+let soma = Number(sorvetes) * Number(valor);
+alert(`O total da compra é de R$ ${soma.toFixed(2)}`);
+
+// **5. Jogo de Adivinhação**
+
+// Escolha um número secreto fixo. Pergunte ao usuário um número e mostre o número secreto junto com o número que ele chutou.
+
+let secreto = 9
+
+let chute = prompt("Digite o número secreto de 0 a 10");
+
+alert(`O número era ${secreto}, você chutou ${chute}.`);
+
+// ou
+let secreto = Math.floor(Math.random() * 10) +1;
+let chute = prompt("Adivinhe o número secreto (entre 1 e 10):");
+alert(`O número secreto er ${secreto}. Você chutou ${chute}.`)
+
+// **6. Exibição de Números**
+
+// Peça dois números ao usuário e exiba os dois números que ele informou.
+
+let num1 = prompt("Digite o primeiro número: ");
+let num2 = prompt("Digite o segundo número: ");
+
+alert(`Os números digitados foram ${num1} e ${num2}. `)
+
+// **7. Conta de Restaurante**
+
+// Peça ao usuário o valor da conta e a porcentagem de gorjeta desejada. Calcule o valor da gorjeta e o total da conta e mostre na tela.
+
+let conta = prompt("Digite o valor da conta: ");
+let desconto = prompt("Digite o percentual da gorjeta: ");
+let final = Number(conta) + Number(desconto);
+
+alert(`O valor final da conta é ${final}.`);
+
+// **8. Hora da Multiplicação**
+
+// Peça dois números ao usuário, calcule a multiplicação deles e exiba o resultado no console.
+
+let num1 = prompt("Digite o primeiro número: ");
+let num2 = prompt("Digite o segundo número: ");
+let resultado = Number(num1) * Number(num2);
+
+console.log("Resultado final: ", resultado);
+
+// **9. Previsão do Futuro**
+
+// Pergunte ao usuário seu nome, o ano atual e quantos anos ele quer adicionar. Calcule e exiba o ano futuro.
+
+let nome = prompt("Digite seu nome: ");
+let ano = prompt("Digite o ano atual: ");
+let num = prompt("Digite quantos anos deseja acrescentar: ");
+let final = Number(nome) + Number(num);
+
+alert(`O valor final é de: ${final}.`)
+
+// **10. Exibição de Nota**
+
+// Peça ao usuário uma nota e mostre na tela a nota digitada.
+
+let nota = prompt("Digite sua nota: ");
+
+alert(`Sua nota foi ${nota}.`);
+
+// ### **Desafio: Planejador de Compras**
+
+// Os alunos devem criar um programa que calcule o valor total de uma compra com base em quantidades e preços de produtos. O programa deve usar `prompt` para receber os dados, calcular o total e exibir o resultado com `alert` e `console.log`.
+
+let produto1 = prompt("Digite o valor do primeiro produto: ");
+let produto2 = prompt("Digite o valor do segundo produto: ");
+let produto3 = prompt("Digite o valor do terceiro produto: ");
+let valor = Number(produto1) + Number(produto2) + Number(produto3);
+
+alert(`O valor final da compra foi de ${valor} reais.`)
+console.log("Resultado final: ", valor);
+   </script> 
+</body>
+</html>
+
