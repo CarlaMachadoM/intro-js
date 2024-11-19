@@ -122,6 +122,36 @@ let valor = Number(produto1) + Number(produto2) + Number(produto3);
 
 alert(`O valor final da compra foi de ${valor} reais.`)
 console.log("Resultado final: ", valor);
+
+// **Desafio Final: Calculadora de Média Simples**
+
+// Você foi contratado para desenvolver uma funcionalidade simples de uma calculadora que ajudará estudantes a calcular suas notas finais. Para isso, você precisa criar um script JavaScript que:
+
+// 1. Solicite ao usuário o **nome da disciplina** usando `prompt`.
+// 2. Solicite ao usuário as **notas das três provas** que ele realizou, uma de cada vez, usando `prompt`.
+// 3. Calcule a **média simples** das notas.
+// 4. Exiba uma mensagem final ao usuário, informando:
+//     - O nome da disciplina.
+//     - As três notas digitadas.
+//     - A média calculada.
+
+// ---
+
+// ### **Regras**
+
+// - Você deve usar **variáveis** para armazenar as entradas do usuário e o resultado da média.
+// - Certifique-se de que as notas sejam tratadas como números para realizar o cálculo.
+// - Utilize apenas conceitos de **declaração de variáveis**, **entrada com `prompt`**, **manipulação de tipos** e **exibição com `alert`**.
+
+// ---
+
+let materia = prompt("Digite o nome da matéria: ");
+let nota1 = prompt("Digite a primeira nota: ");
+let nota2 = prompt("Digite a segunda nota: ");
+let nota3 = prompt("Digite a terceira nota: ");
+
+let media = (parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3)) / 3;
+alert(`A média final do aluno é de: ${media.tofixed(2)}.`)
    </script> 
 </body>
 </html>
